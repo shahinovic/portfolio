@@ -1,0 +1,10 @@
+.skill h2 {
+  color: #fff;
+  margin: 0;
+}
+.ui.progress {
+  border: 1px solid #71e5ff;
+}
+.ui.progress > .label {
+  color: #fff;
+}
