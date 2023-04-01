@@ -7,9 +7,9 @@ function Header() {
   return (
     <Motion>
       <div className="section AS__header section__padding" id="home">
-        <div className="embed-container" style={{ display: "none" }}>
+        <div className="embed-container">
           <embed
-            src="/path/to/your/pdf/file.pdf"
+            src="/assets/Ahmed_Shahin_Resume.pdf"
             type="application/pdf"
             width="100%"
             height="600px"
