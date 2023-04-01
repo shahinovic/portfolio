@@ -7,6 +7,15 @@ function Header() {
   return (
     <Motion>
       <div className="section AS__header section__padding" id="home">
+        <div className="embed-container" style={{ display: "none" }}>
+          <embed
+            src="/path/to/your/pdf/file.pdf"
+            type="application/pdf"
+            width="100%"
+            height="600px"
+          />
+        </div>
+
         <div className="AS__header-content">
           <h1 className="">
             <span className="gradient__text">Hi There!, I Am Ahmed Shahin</span>
