@@ -10,12 +10,6 @@ function Header() {
         <div className="AS__header-content">
           <h1 className="">
             <span className="gradient__text">Hi There!, I Am Ahmed Shahin</span>
-
-            <a
-              data-text="Ahmed Shahin"
-              href="https://www.linkedin.com/in/ahmed-shahin-64ba80256"
-              target={"_blank"}
-            ></a>
           </h1>
           <p>
             I am a front-end developer with a passion for creating visually
@@ -29,7 +23,7 @@ function Header() {
             <a
               data-tooltip="Size: 38.4kB"
               className="button"
-              href="src/resume/Ahmed_Shahin_Resume.pdf"
+              href="./assets/Ahmed_Shahin_Resume.pdf"
               download="Ahmed_Shahin_Resume.pdf"
             >
               <div className="button-wrapper">
