@@ -23,7 +23,7 @@
 
 
 ### You can view the live demo of the website at 
-(https://shahinovic.github.io/portfolio/).
+(https://portfolio-six-orpin-92.vercel.app/).
 
 
 
