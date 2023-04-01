@@ -4,17 +4,7 @@ import me from "../../assets/images/me.jpg";
 import Motion from "../Motion";
 
 function Header() {
-  function handleDownloadClick() {
-    const pdfUrl = process.env.PUBLIC_URL + "/Ahmed_Shahin_Resume.pdf";
-
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Ahmed_Shahin_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-
+  const resume = "../../assets/Ahmed_Shahin_Resume.pdf";
   return (
     <Motion>
       <div className="section AS__header section__padding" id="home">
@@ -34,7 +24,8 @@ function Header() {
             <a
               data-tooltip="Size: 38.4kB"
               className="button"
-              onClick={handleDownloadClick}
+              href={resume}
+              download
             >
               <div className="button-wrapper">
                 <div className="text">Download</div>
