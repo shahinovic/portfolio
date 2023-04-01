@@ -4,7 +4,7 @@ import me from "../../assets/images/me.jpg";
 import Motion from "../Motion";
 
 function Header() {
-  const resume = "../../assets/Ahmed_Shahin_Resume.pdf";
+  const resume = "./Ahmed_Shahin_Resume.pdf";
   return (
     <Motion>
       <div className="section AS__header section__padding" id="home">
