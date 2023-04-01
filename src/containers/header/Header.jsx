@@ -4,18 +4,20 @@ import me from "../../assets/images/me.jpg";
 import Motion from "../Motion";
 
 function Header() {
+  function handleDownloadClick() {
+    const pdfUrl = process.env.PUBLIC_URL + "/Ahmed_Shahin_Resume.pdf";
+
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Ahmed_Shahin_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <Motion>
       <div className="section AS__header section__padding" id="home">
-        <div className="embed-container">
-          <embed
-            src="/assets/Ahmed_Shahin_Resume.pdf"
-            type="application/pdf"
-            width="100%"
-            height="600px"
-          />
-        </div>
-
         <div className="AS__header-content">
           <h1 className="">
             <span className="gradient__text">Hi There!, I Am Ahmed Shahin</span>
@@ -32,8 +34,7 @@ function Header() {
             <a
               data-tooltip="Size: 38.4kB"
               className="button"
-              href="./assets/Ahmed_Shahin_Resume.pdf"
-              download="Ahmed_Shahin_Resume.pdf"
+              onClick={handleDownloadClick}
             >
               <div className="button-wrapper">
                 <div className="text">Download</div>
